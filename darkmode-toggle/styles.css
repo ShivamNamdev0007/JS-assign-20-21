@@ -1,0 +1,52 @@
+.lightmode {
+
+    /* background-image: url('https://c4.wallpaperflare.com/wallpaper/344/20/4/new-york-usa-manhattan-city-morning-dawn-skyscrapers-buildings-wallpaper-preview.jpg'); */
+    font-style: italic;
+    color: black;
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation-name: change-light-color; 
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes change-light-color {
+    from {background-image: url('https://th.bing.com/th/id/R.20818cec32f3d4de67eb97b93f13baa0?rik=evfnrXa0qm1bPw&riu=http%3a%2f%2fg1.img-dpreview.com%2fE2A8206ABC1A4295A423B102F3D500AA.jpg&ehk=Ti%2bvufXvUTrKRUKyxUKYoqtyDiV%2bMO3%2biFnarq%2fLCcY%3d&risl=&pid=ImgRaw&r=0');}
+    to { background-image:url('https://c4.wallpaperflare.com/wallpaper/344/20/4/new-york-usa-manhattan-city-morning-dawn-skyscrapers-buildings-wallpaper-preview.jpg');}
+    
+    
+    
+}
+
+.darkmode {
+    
+    /* background-image: url('https://th.bing.com/th/id/R.20818cec32f3d4de67eb97b93f13baa0?rik=evfnrXa0qm1bPw&riu=http%3a%2f%2fg1.img-dpreview.com%2fE2A8206ABC1A4295A423B102F3D500AA.jpg&ehk=Ti%2bvufXvUTrKRUKyxUKYoqtyDiV%2bMO3%2biFnarq%2fLCcY%3d&risl=&pid=ImgRaw&r=0'); */
+    font-style: italic;
+    color: white;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation-name: change-dark-color;
+    animation-duration: 2s; 
+    animation-fill-mode: forwards; 
+}
+
+
+@keyframes change-dark-color {
+    from { background-image:url('https://c4.wallpaperflare.com/wallpaper/344/20/4/new-york-usa-manhattan-city-morning-dawn-skyscrapers-buildings-wallpaper-preview.jpg');}
+    to {background-image: url('https://th.bing.com/th/id/R.20818cec32f3d4de67eb97b93f13baa0?rik=evfnrXa0qm1bPw&riu=http%3a%2f%2fg1.img-dpreview.com%2fE2A8206ABC1A4295A423B102F3D500AA.jpg&ehk=Ti%2bvufXvUTrKRUKyxUKYoqtyDiV%2bMO3%2biFnarq%2fLCcY%3d&risl=&pid=ImgRaw&r=0');
+        }
+
+}
+
+#button:hover {
+    cursor: pointer;
+}
+
+#button {
+    width: 100px;
+    height: 30px;
+    border-radius: 50px;
+    background: linear-gradient("to bottom,purple,yellow,black");
+}

@@ -1,0 +1,106 @@
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#main
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    background-color:gray;
+    cursor: pointer;
+    border-radius: 50px;
+    width: 64px;
+    height: 30px;
+}
+
+.left
+{
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    border-radius: 50px;
+    background-size: cover;
+    background-image: url('https://www.bing.com/images/blob?bcid=S6nkHUKSQVAHkxAKHvzNpEQBMsNk.....9w');
+}
+.right{
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    border-radius: 50px;
+    background-size: cover;
+    background-image: url('https://th.bing.com/th/id/OIP.IkRWQnCoXx4h0G1Si0_N6wHaHa?w=186&h=186&c=7&r=0&o=5&dpr=1.4&pid=1.7');
+}
+.blank
+{
+    width: 25px;
+    height: 25px;
+    background-color:white;
+    position: absolute;
+    top: 2.5px;
+    left: 2.5px;
+    border-radius: 50%;
+    transition: transform 1s;
+    transform: translateX(32px);
+    border:none;
+    cursor: pointer;
+}
+.blank1
+{
+
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    background-color:white;
+    position: absolute;
+    top: 2.5px;
+    left: 2.5px;
+    transition: transform 1s;
+    border-radius: 50%;
+    border: none;
+}
+
+
+.lightmode {
+
+    /* background-image: url('https://c4.wallpaperflare.com/wallpaper/344/20/4/new-york-usa-manhattan-city-morning-dawn-skyscrapers-buildings-wallpaper-preview.jpg'); */
+    font-style: italic;
+    color: black;
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation-name: change-light-color; 
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes change-light-color {
+    from {background-image: url('https://th.bing.com/th/id/R.20818cec32f3d4de67eb97b93f13baa0?rik=evfnrXa0qm1bPw&riu=http%3a%2f%2fg1.img-dpreview.com%2fE2A8206ABC1A4295A423B102F3D500AA.jpg&ehk=Ti%2bvufXvUTrKRUKyxUKYoqtyDiV%2bMO3%2biFnarq%2fLCcY%3d&risl=&pid=ImgRaw&r=0');}
+    to { background-image:url('https://c4.wallpaperflare.com/wallpaper/344/20/4/new-york-usa-manhattan-city-morning-dawn-skyscrapers-buildings-wallpaper-preview.jpg');}
+    
+    
+    
+}
+
+.darkmode {
+    
+    /* background-image: url('https://th.bing.com/th/id/R.20818cec32f3d4de67eb97b93f13baa0?rik=evfnrXa0qm1bPw&riu=http%3a%2f%2fg1.img-dpreview.com%2fE2A8206ABC1A4295A423B102F3D500AA.jpg&ehk=Ti%2bvufXvUTrKRUKyxUKYoqtyDiV%2bMO3%2biFnarq%2fLCcY%3d&risl=&pid=ImgRaw&r=0'); */
+    font-style: italic;
+    color: white;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation-name: change-dark-color;
+    animation-duration: 2s; 
+    animation-fill-mode: forwards; 
+}
+@keyframes change-dark-color {
+    from { background-image:url('https://c4.wallpaperflare.com/wallpaper/344/20/4/new-york-usa-manhattan-city-morning-dawn-skyscrapers-buildings-wallpaper-preview.jpg');}
+    to {background-image: url('https://th.bing.com/th/id/R.20818cec32f3d4de67eb97b93f13baa0?rik=evfnrXa0qm1bPw&riu=http%3a%2f%2fg1.img-dpreview.com%2fE2A8206ABC1A4295A423B102F3D500AA.jpg&ehk=Ti%2bvufXvUTrKRUKyxUKYoqtyDiV%2bMO3%2biFnarq%2fLCcY%3d&risl=&pid=ImgRaw&r=0');
+        }
+
+}
