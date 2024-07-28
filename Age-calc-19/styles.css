@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow: hidden;
+    background: #8e9eab;
+background: -webkit-linear-gradient(to right, #eef2f3, #8e9eab); 
+background: linear-gradient(to right, #eef2f3, #8e9eab);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    height: 100vh;
+}
+.ageCalculator{
+    border: 2px solid black;
+    height: 300px;
+    width: 500px;
+    padding-left: 150px;
+    padding-top: 50px;
+    background: #abbaab;
+}
+.ageCalculator label{
+    display: block;
+    margin-top: 0.2rem;
+}
+.ageCalculator .DOB-Input{
+    align-self: center;
+    margin-left: 20px;
+    height: 2rem;
+    width: 10rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.ageCalculator .age-button .button-click{
+    height: 2rem;
+    width: 10rem;
+    background: #833ab4;  
+background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+    margin-left: 20px;
+    border-radius: 10px;
+    margin-bottom: 0.5rem;
+} 
+.ageCalculator .curr-dob{
+    margin-left: 45px;
+    font-size: 1.2rem;
+}
