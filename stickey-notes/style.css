@@ -1,0 +1,101 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+nav
+{
+    z-index:100 ;
+    display: flex;
+    width: 100vw;
+    height: 10vh;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #435c64;
+    color: aliceblue;
+    
+}
+.container {
+    width: 100vw;
+    height:90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.left-container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50vw;
+    height: 90vh;
+    background-color: #6495ed;
+}
+
+.right-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 50vw;
+    height: 90vh;
+    background-color: #76929b;
+
+}
+
+
+
+#Add-notes >button {
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 50px;
+    cursor: pointer;
+    background:linear-gradient(to left, rgb(216, 115, 115) ,rgb(161, 161, 69),rgb(236, 74, 101));
+    color: white;
+
+}
+#notes-container 
+{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    gap: 10px;
+    flex-wrap: wrap;overflow-x: hidden;
+    overflow-y: auto;
+  
+      scroll-behavior: auto   ;
+  
+      z-index: 0;
+  
+}
+#notes-container > div 
+{   
+    width: 220px;
+    height: 220px;
+    border-radius: 50px;
+    position: relative;
+
+    
+}
+#notes-container > div >button
+{
+    height: 25px;
+    width: 25px;
+    /* border-radius: 20%; */
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top:15px;
+    right: 15px;
+}
+#notes-container > div >p{
+    margin: 40PX 10PX;
+}

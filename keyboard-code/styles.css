@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+#keypress{
+    width: 450px;
+    height: 100px;
+    background-color: lightblue;
+    font-size: 2rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#keyvalue{
+    text-align: center;
+    padding-top: 90px;
+    font-size: 4rem;
+    margin-top: 2rem;
+    width: 250px;
+    height: 250px;
+    border-radius: 50px;
+    background:linear-gradient(to top,red,green) ;
+}
