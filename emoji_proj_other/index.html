@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('https://thumbs.dreamstime.com/z/emoji-vector-background-design-smiley-emoji-smile-faces-emoticons-emoji-vector-background-design-smiley-emoji-smile-faces-192501854.jpg');
+            background-repeat:no-repeat ;
+            background-size: cover;
+        }
+        #showemoji {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            background-color: #fed9ff;
+            width: 600px;
+            height: 250px;
+            overflow-x: hidden;
+            overflow-y: auto;
+            text-align: center;
+            padding: 20px;
+            cursor: pointer;
+            margin:140px ;
+        }
+        form{
+            margin: 40px;
+        }
+        button{
+            margin-top: 35px;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 4px;
+        }
+        
+        #search
+        {
+            margin-top: 20px;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            background-color: #d8f2d8;
+            color: rgb(76, 61, 61);
+            border-radius: 4px;
+            width: 150px;
+        }
+        label{
+            margin-right: 10px;
+            font-size: 16px;
+            font-weight: bold;
+            font-family: sans-serif;
+            margin-bottom: 10px;
+            font-style:italic;
+        }
+        .footer
+        {   
+            margin-top: 150px;
+            /* font-size: 12px; */
+            font-style: italic;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #203121;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emoji</title>
+</head>
+
+<body>
+    <center>
+    <h1>Emojee - Search 🔍 Application</h1>
+    <form action="">
+        <label for="search">Search Emoji:</label>
+        <input type="search" id="search" >
+    </form>
+    <div id="buttongroup">
+        <button value="Smileys & Emotion">Smile</button>
+        <button value="People & Body">People</button>
+        <button value="Animals & Nature">Animal</button>
+        <button value="Food & Drink">Food</button>
+        <button value="Travel & Places">Travel</button>
+        <button value="Activities">Activities</button>
+        <button value="Objects">Object</button>
+        <button value="Symbols">System</button>
+        <button value="Flags">Flags</button>
+        
+    </div>
+    <div id="showemoji"></div>
+    <h1 class="footer">Click on emoji and past any where...</h1>
+</center>
+    <script src="./emoji.js"></script>
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
