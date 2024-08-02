@@ -99,40 +99,9 @@ footer {
 
         <section>
             <h2>GitHub Repository</h2>
-            <p>Explore the source code and contribute to the project:</p>
+            <p>Explore the source code</p>
             <ul>
                 <li><strong>GitHub Repo</strong>: <a href="https://github.com/ShivamNamdev0007/JS-assign-20-21/new/main/emoji_proj_other" target="_blank">Emoji Search GitHub Repository</a></li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Contributing</h2>
-            <p>We welcome contributions! If you have suggestions for improvements or new features, please fork the repository and submit a pull request.</p>
-            <ol>
-                <li>Fork the repository.</li>
-                <li>Create your feature branch: <code>git checkout -b feature/YourFeature</code></li>
-                <li>Commit your changes: <code>git commit -m 'Add some feature'</code></li>
-                <li>Push to the branch: <code>git push origin feature/YourFeature</code></li>
-                <li>Open a pull request.</li>
-            </ol>
-        </section>
-
-        <section>
-            <h2>License</h2>
-            <p>This project is licensed under the MIT License. See the <a href="LICENSE" target="_blank">LICENSE</a> file for details.</p>
-        </section>
-
-        <section>
-            <h2>Acknowledgments</h2>
-            <p>Thanks to the contributors and the open-source community for their support and resources. Emoji data can be sourced from various emoji libraries or APIs.</p>
-        </section>
-
-        <section>
-            <h2>Contact</h2>
-            <p>For any questions or inquiries, feel free to reach out:</p>
-            <ul>
-                <li><strong>Your Name</strong>: <a href="mailto:youremail@example.com">youremail@example.com</a></li>
-                <li><strong>GitHub</strong>: <a href="https://github.com/ShivamNamdev0007" target="_blank">ShivamNamdev0007</a></li>
             </ul>
         </section>
 
