@@ -18,7 +18,7 @@ function displayemoji(searcheddata) {
     filteredlist.forEach(function(emoji) {
         // console.log(emoji.emoji);
         let div= document.createElement('div');
-        let p= document.createElement('p');
+        let p= document.createElement('span');
 
         div.appendChild(p);
 

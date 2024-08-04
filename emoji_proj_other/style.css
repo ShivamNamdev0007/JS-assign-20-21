@@ -1,22 +1,54 @@
 body {
     font-family: Arial, sans-serif;
-    background-image: url('https://thumbs.dreamstime.com/z/emoji-vector-background-design-smiley-emoji-smile-faces-emoticons-emoji-vector-background-design-smiley-emoji-smile-faces-192501854.jpg');
-    background-repeat:no-repeat ;
-    background-size: cover;
+    background-color: rgb(155, 142, 142);
+  
 }
 #showemoji {
     display: flex;
     justify-content: space-around;
+    gap: 20px;
     flex-wrap: wrap;
-    background-color: #fed9ff;
-    width: 600px;
-    height: 250px;
+    background-color: #d7c9d8;
+    width: 100vw;
     overflow-x: hidden;
     overflow-y: auto;
-    text-align: center;
-    padding: 20px;
     cursor: pointer;
-    margin:140px ;
+}
+#showemoji > div
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 120px;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: gray;
+    border:white solid ;
+   
+    
+   
+    
+}
+#showemoji > div:hover
+
+{
+    animation-name: example;
+  animation-duration: 0.1s ;
+     
+}
+@keyframes example {
+    0% { transform : rotate(0deg); 
+        }
+    25% { transform : rotate(90deg);}
+    50% { transform : rotate(180deg); }
+    75% { transform : rotate(270deg); }
+    100% { transform : rotate(360deg); }
+    
+}
+#showemoji > div >span{
+    font-size: 50px;
+
 }
 form{
     margin: 40px;
