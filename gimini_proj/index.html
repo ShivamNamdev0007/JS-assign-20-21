@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gemini API</title>
+</head>
+
+<body>
+    <div id="msgcontainer">
+        <div class="user-msg">
+            Hellow Shivam!!
+        </div>
+        <div class="bot_msg">How I can help you</div>
+    </div>
+    <div class="userinput">
+        <p id="datafromui"></p>
+        <input type="text" id="user-input" placeholder="Ask Anything">
+        <button class="btn"> Search With Gemini</button>
+    </div>
+    <script type="importmap">
+        {
+          "imports": {
+            "@google/generative-ai": "https://esm.run/@google/generative-ai"
+          }
+        }
+      </script>
+    <script type="module">
+        let input=document.getElementById("user-input");
+        let datafromui= document.getElementById("datafromui");
+
+        import { GoogleGenerativeAI } from "@google/generative-ai";
+        let API_KEY="AIzaSyCBa2bqa_ljdeuybUTnS1_qAh5c68Fva4k";
+        const genAI = new GoogleGenerativeAI(API_KEY);
+        let button1 = document.querySelector(".btn");
+        async function callapi() {
+            const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+
+            const prompt = input.value;
+
+            const result = await model.generateContent(prompt);
+            const response = await result.response;
+            const text = response.text();
+            datafromui.innerText=text;
+            
+            // console.log(text);
+            input.value = '';
+        
+        };
+
+        button1.addEventListener("click", callapi);
+        callapi();
+
+
+    </script>
+
+
+</body>
+
+</html>
