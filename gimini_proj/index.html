@@ -31,7 +31,9 @@
         let datafromui= document.getElementById("datafromui");
 
         import { GoogleGenerativeAI } from "@google/generative-ai";
-        let API_KEY="AIzaSyCBa2bqa_ljdeuybUTnS1_qAh5c68Fva4k";
+        import { secret } from "./hidedata.js";
+
+        let API_KEY=secret.gemini_apikey;
         const genAI = new GoogleGenerativeAI(API_KEY);
         let button1 = document.querySelector(".btn");
         async function callapi() {
