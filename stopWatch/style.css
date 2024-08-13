@@ -1,0 +1,86 @@
+*
+{
+    padding: 0%;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    width: 100vw;
+    background-image: url("https://img.freepik.com/premium-photo/stopwatch-human-hand-isolated-background_488220-26671.jpg");
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 100px;
+    letter-spacing: 20px;
+    font-style: italic;
+    
+    background-image: linear-gradient(to right, #612e9486, #e91e63, #801892);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+#display{
+    font-size: 80px;
+    font-weight: bold;
+    letter-spacing: 10px;
+    font-family:'Courier New', Courier, monospace;
+    
+    /* color: transparent; */
+    background-clip: text;
+    text-shadow: 5px 4px 5px  rgba(206, 18, 18, 0.5);
+    
+
+}
+button{
+    margin: 0 20px;
+}
+
+#startbutton{
+    color:white;
+    padding: 15px 25px;
+    background-image: radial-gradient(93% 87% at 87% 89%, rgba(0, 0, 0, 0.23) 0%, transparent 86.18%), radial-gradient(66% 66% at 26% 20%, rgba(255, 255, 255, 0.55) 0%, rgba(255, 255, 255, 0) 69.79%, rgba(255, 255, 255, 0) 100%);
+    box-shadow: inset -3px -3px 9px rgba(255, 255, 255, 0.25), inset 0px 3px 9px rgba(255, 255, 255, 0.3), inset 0px 1px 1px rgba(255, 255, 255, 0.6), inset 0px -8px 36px rgba(0, 0, 0, 0.3), inset 0px 1px 5px rgba(255, 255, 255, 0.6), 2px 19px 31px rgba(0, 0, 0, 0.2);
+    border-radius: 14px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    background-color: #82b621;
+}
+#Stopbutton{
+  color:white;
+  padding: 15px 25px;
+  background-image: radial-gradient(93% 87% at 87% 89%, rgba(0, 0, 0, 0.23) 0%, transparent 86.18%), radial-gradient(66% 66% at 26% 20%, rgba(255, 255, 255, 0.55) 0%, rgba(255, 255, 255, 0) 69.79%, rgba(255, 255, 255, 0) 100%);
+  box-shadow: inset -3px -3px 9px rgba(255, 255, 255, 0.25), inset 0px 3px 9px rgba(255, 255, 255, 0.3), inset 0px 1px 1px rgba(255, 255, 255, 0.6), inset 0px -8px 36px rgba(0, 0, 0, 0.3), inset 0px 1px 5px rgba(255, 255, 255, 0.6), 2px 19px 31px rgba(0, 0, 0, 0.2);
+  border-radius: 14px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  background-color: #4C43CD;
+}
+#resetbutton
+{
+  color: #fff;
+  padding: 15px 25px;
+  background-color: #38D2D2;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-image: radial-gradient(93% 87% at 87% 89%, rgba(0, 0, 0, 0.23) 0%, transparent 86.18%), radial-gradient(66% 66% at 26% 20%, rgba(255, 255, 255, 0.55) 0%, rgba(255, 255, 255, 0) 69.79%, rgba(255, 255, 255, 0) 100%);
+  box-shadow: inset -3px -3px 9px rgba(255, 255, 255, 0.25), inset 0px 3px 9px rgba(255, 255, 255, 0.3), inset 0px 1px 1px rgba(255, 255, 255, 0.6), inset 0px -8px 36px rgba(0, 0, 0, 0.3), inset 0px 1px 5px rgba(255, 255, 255, 0.6), 2px 19px 31px rgba(0, 0, 0, 0.2);
+  border-radius: 14px;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+    
+}
+
