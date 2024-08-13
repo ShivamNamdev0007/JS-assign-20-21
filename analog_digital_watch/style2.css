@@ -1,0 +1,109 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+/* Global Styles */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0; /* Light background */
+    transition: background-color 0.5s ease;
+}
+
+/* Clock Container */
+.clock-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Analog Clock Styles */
+.analog {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border: 10px solid #333; /* Clock face border */
+    border-radius: 50%;
+    background: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+/* Clock Hands */
+.hour-hand,
+.minute-hand,
+.second-hand {
+    position: absolute;
+    background: #333; /* Hand color */
+    transform-origin: bottom;
+    bottom: 50%;
+    left: 50%;
+    transition: transform 0.5s ease;
+}
+
+.hour-hand {
+    height: 50px;
+    width: 6px;
+    background: #000; /* Hour hand color */
+}
+
+.minute-hand {
+    height: 70px;
+    width: 4px;
+    background: #666; /* Minute hand color */
+}
+
+.second-hand {
+    height: 90px;
+    width: 2px;
+    background: red; /* Second hand color */
+}
+
+/* Digital Clock Styles */
+.digital {
+    font-size: 2rem;
+    color: #333; /* Digital clock text color */
+}
+
+.digital span {
+    margin: 0 2px;
+}
+
+/* Dark Mode Styles */
+body.dark {
+    background-color: #181625; /* Dark background */
+    color: #fff; /* Light text */
+}
+
+body.dark .analog {
+    background: #333; /* Dark clock face */
+    border-color: #fff; /* Light border */
+}
+
+body.dark .hour-hand,
+body.dark .minute-hand,
+body.dark .second-hand {
+    background: #fff; /* Light hands in dark mode */
+}
+
+/* Button Styles */
+.toggle {
+    background: transparent;
+    border: none;
+    color: #333;
+    font-size: 25px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.toggle:hover {
+    transform: scale(1.1);
+}

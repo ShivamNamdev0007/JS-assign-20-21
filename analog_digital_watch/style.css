@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+     box-sizing: border-box;
+     
+}
+body
+{background: linear-gradient(to right, #612e9486, #e91e63, #801892);}
+h1
+{
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 20px;
+    text-align: center;
+}
+ul
+{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 800;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+.main
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap:2rem;
+    
+    
+}
+.analog{
+    height: 350px;
+    width: 350px;
+    position: relative;
+    margin-top: 25px;
+    
+
+}
+img{
+    position: absolute;
+    border-radius: 175px;
+    border: 2px solid black;
+    opacity: 0.5;
+}
+.digital{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:5px;
+    font-size: 40px;
+    color:white;
+    font-weight: 800;
+}
+
+
+
+.hour-hand
+{
+    position: absolute;
+    width: 5px;
+    height: 90px;
+    border-radius: 8px;
+    background-color: black;
+    right: 48.8%;
+    top: 24%;
+    transform-origin: bottom ;
+}
+
+.minute-hand{
+    position: absolute;
+    width: 2.5px;
+    height: 110px;
+    border-radius: 10px;
+    /* background-color: black; */
+    right: 49.3%;
+    top: 18.5%;
+    background-color:#666;
+    transform-origin: bottom ;
+
+   
+}
+.second-hand
+{
+    position: absolute;
+    width: 1.5px;
+    height: 140px;
+    border-radius: 10px;
+    background-color: black;
+    right: 49.5%;
+    top: 10%;
+    /* background-color:goldenrod; */
+    background-color: red;
+    transform-origin: bottom;
+
+}
+
+
