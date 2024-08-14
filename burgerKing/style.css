@@ -55,10 +55,12 @@ body{
     color: rgb(108, 212, 10);
 }
 .homepageimg {
-    position: relative;
- 
+position: relative;
  height: 400px;
- width: 100%;   background-image: url('https://discoveringmontana.com/wp-content/uploads/2022/04/paradise-falls-tavern.jpg');
+ width: 100%; 
+ background-image: url('https://discoveringmontana.com/wp-content/uploads/2022/04/paradise-falls-tavern.jpg');
+ background-repeat: no-repeat;
+ background-size: cover;
 }
 .homepageimg h1{
     position: absolute;
