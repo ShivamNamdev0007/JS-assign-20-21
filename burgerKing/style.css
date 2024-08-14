@@ -57,9 +57,9 @@ body{
 .homepageimg {
 position: relative;
  height: 400px;
- width: 100%; 
+ width: 100vw; 
  background-image: url('https://discoveringmontana.com/wp-content/uploads/2022/04/paradise-falls-tavern.jpg');
- background-repeat: no-repeat;
+ background-repeat:no-repeat;
  background-size: cover;
 }
 .homepageimg h1{
