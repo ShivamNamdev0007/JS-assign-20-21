@@ -1,29 +1,28 @@
-
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    background: linear-gradient(to left ,rgb(56, 53, 53),rgb(118, 102, 102));
-    /* opacity: 0.5; */
+
+body {
+    background: linear-gradient(to left, rgb(56, 53, 53), rgb(118, 102, 102));
     color: white;
     font-family: "Grey Qo", cursive;
 }
-.logo h1{
+
+.logo h1 {
     font-family: "Grey Qo", cursive;
     font-weight: 1000;
     font-size: 2rem;
 }
-.logo h1 span
-{
+
+.logo h1 span {
     color: rgb(108, 212, 10);
     font-size: 3rem;
 }
 
-.navbar
-{
-    background: linear-gradient(to top ,rgb(56, 53, 53),rgb(118, 102, 102));
+.navbar {
+    background: linear-gradient(to top, rgb(56, 53, 53), rgb(118, 102, 102));
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -33,38 +32,44 @@ body{
     top: 1px;
     z-index: 100;
 }
+
 .nav-list li {
     list-style: none;
     margin: 0 10px;
     display: inline-block;
 }
-.nav-list li a{
+
+.nav-list li a {
     color: white;
     text-decoration: none;
     font-family: "Grey Qo", cursive;
     font-weight: 1000;
     font-size: 1.5rem;
 }
-.icons{
+
+.icons {
     display: flex;
     justify-content: space-around;
     text-align: center;
     gap: 2rem;
 }
-.icons a{
+
+.icons a {
     color: rgb(108, 212, 10);
 }
+
 .homepageimg {
-position: relative;
- height: 400px;
- width: 100vw; 
- background-image: url('https://discoveringmontana.com/wp-content/uploads/2022/04/paradise-falls-tavern.jpg');
- background-repeat:no-repeat;
- background-size: cover;
+    position: relative;
+    height: 800px;
+    width: 100vw;
+    background-image: url('https://discoveringmontana.com/wp-content/uploads/2022/04/paradise-falls-tavern.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-.homepageimg h1{
+
+.homepageimg h1 {
     position: absolute;
-    top:10%;
+    top: 10%;
     left: auto;
     font-family: 'Courier New', Courier, monospace;
     font-size: 2rem;
@@ -72,18 +77,19 @@ position: relative;
     color: #e05e85;
     width: 400px;
 }
-.homepageimg h2{
+
+.homepageimg h2 {
     position: absolute;
-    top:45%;
-    left:70%;
+    top: 45%;
+    left: 70%;
     font-family: 'Courier New', Courier, monospace;
     font-size: 1.6rem;
     text-align: center;
     color: #f22525;
     width: 100px;
 }
-#items
-{
+
+#items {
     text-align: center;
     padding: 10px;
     font-family: 'Courier New', Courier, monospace;
@@ -91,7 +97,9 @@ position: relative;
     font-weight: 600;
     font-size: 1.2rem;
 }
-#btn,#btn2{
+
+#btn,
+#btn2 {
     padding: 5px 10px;
     border-radius: 10px;
     background: linear-gradient(to right, #4CAF50, #2196F3);
@@ -100,15 +108,14 @@ position: relative;
     font-family: 'Courier New', Courier, monospace;
     border: none;
 }
-#btn:hover
-{
+
+#btn:hover {
     color: black;
     transition: all 0.5s ease-in-out;
 }
 
-#selectedorder
-{
-   
+#selectedorder {
+
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -116,14 +123,87 @@ position: relative;
     gap: 25px;
     margin: 0px 30px;
 }
-#h1{
+
+#h1 {
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
     font-style: italic;
 }
-#selectedorder img{
-    margin: 30px 0px ;
+
+#selectedorder img {
+    margin: 30px 0px;
     width: 200px;
     height: 300px;
     border-radius: 10px;
+}
+
+/* media query */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; 
+        height: auto;  
+    
+    }
+
+    .nav-list {
+        flex-direction: column; 
+        align-items: center; 
+        display: none;
+    }
+    .icons a {
+        display: none;
+    }
+
+    .nav-list li {
+        margin: 5px 0; 
+    }
+
+    .homepageimg h1 {
+        font-size: 1.5rem; 
+    }
+
+    .homepageimg h2 {
+        font-size: 1.2rem; 
+    }
+
+    #items {
+        font-size: 1rem; 
+    }
+
+    #btn,
+    #btn2 {
+        padding: 10px; 
+        font-size: 1rem; 
+    }
+
+    #selectedorder img {
+        width: 150px; 
+        height: auto; 
+    }
+}
+
+@media (max-width: 480px) {
+    .logo h1 {
+        font-size: 1.5rem; 
+    }
+
+    .logo h1 span {
+        font-size: 2rem; 
+    }
+
+    .navbar {
+        padding: 0 10px; 
+    }
+
+    .nav-list li a {
+        font-size: 1.2rem; 
+    }
+
+    .homepageimg h1 {
+        font-size: 1.2rem; 
+    }
+
+    .homepageimg h2 {
+        font-size: 1rem; 
+    }
 }
