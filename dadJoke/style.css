@@ -26,7 +26,7 @@ body
     align-items: center;
     height: 160px;
 
-    width: 400px;
+    width: 40vw;
     background:linear-gradient(to top ,rgb(237, 139, 139),pink,lightblue ) ;
     margin-top: 40px;
     border-radius: 50px;
@@ -49,6 +49,21 @@ body
   100% {color:rgb(131, 66, 66);}
   }
   
+
+  @media (max-width: 600px) {
+    h1 {
+        font-size: 2rem; 
+    }
+
+    #btn {
+        padding: 8px 20px; 
+    }
+
+    p {
+        height: auto; 
+        padding: 10px; 
+    }
+}
 
   
   
