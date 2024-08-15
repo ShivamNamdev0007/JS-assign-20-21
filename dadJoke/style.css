@@ -1,0 +1,54 @@
+body
+{
+    background-color: gray;
+}
+.container
+{
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+#btn{
+    padding: 5px 20px;
+    background:linear-gradient(to right, gray , #403e3e);
+    color: white;
+    border-radius: 15px;    
+    cursor: pointer;
+    transition: background-color 0.3s ease;  
+  }
+
+  p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 160px;
+
+    width: 400px;
+    background:linear-gradient(to top ,rgb(237, 139, 139),pink,lightblue ) ;
+    margin-top: 40px;
+    border-radius: 50px;
+    text-align: center;
+    padding: 0 50px;
+  }
+  h1{
+    color: white;
+    text-shadow: 2px 2px 4px black;
+    animation-name: example;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes example {
+    0%   {color:rgb(223, 83, 83); }
+  25%  {color:gray; }
+  35%  {color:rgb(190, 164, 114);}
+  50%  {color:rgb(121, 121, 202);}
+  75%  {color:rgb(78, 173, 78);}
+  100% {color:rgb(131, 66, 66);}
+  }
+  
+
+  
+  
