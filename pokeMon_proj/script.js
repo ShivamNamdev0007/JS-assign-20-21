@@ -6,7 +6,7 @@ let btnTypeFilter = document.querySelector("#btn-typeFilter");
 let allCards = []; // Array to hold all card elements
 
 let getCards = async () => {
-  for (let i = 1; i <= 250; i++) {
+  for (let i = 1; i <= 350; i++) {
     let response = await fetch(`https://pokeapi.co/api/v2/pokemon/${i}`);
     let data = await response.json();
     displayCards(data);
@@ -98,13 +98,6 @@ btnTypeFilter.addEventListener("click", () => {
   filterByType(typeFilter.value);
 });
 
-// searchInput.addEventListener("input", () => {
-//   filterByName(searchInput.value);
-// });
-
-// typeFilter.addEventListener("change", () => {
-//   filterByType(typeFilter.value);
-// });
 
 let resetBtn = document.querySelector("#reset");
 
