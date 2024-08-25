@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+  <title>Birthday Wish</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f0f0f0;
+    }
+    
+    .container {
+      margin-top: 50px;
+    }
+    
+    h1 {
+      color: #333;
+    }
+    
+    p {
+      font-size: 18px;
+      color: #666;
+    }
+    
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Happy Birthday!</h1>
+    <p id="message"></p>
+    <button onclick="showBirthdayMessage()">Click to see your birthday message</button>
+  </div>
+  <script>
+    const count = 350,
+    defaults = {
+        origin: { y: 0.7
+        
+         },
+    };
+
+function fire(particleRatio, opts) {
+    confetti(
+        Object.assign({}, defaults, opts, {
+            particleCount: Math.floor(count * particleRatio),
+        })
+    );
+}
+window.addEventListener('load', () => {
+    fire(0.25, {
+        spread: 26,
+        startVelocity: 55,
+    });
+
+    fire(0.2, {
+        spread: 60,
+    });
+
+    fire(0.35, {
+        spread: 100,
+        decay: 0.91,
+        scalar: 0.8,
+    });
+
+    fire(0.1, {
+        spread: 120,
+        startVelocity: 25,
+        decay: 0.92,
+        scalar: 1.2,
+    });
+
+    fire(0.1, {
+        spread: 120,
+        startVelocity: 45,
+    });
+    
+});
+
+  </script>
+
+  <script>
+    function showBirthdayMessage() {
+      var message = "Wishing you a very happy birthday! May this special day bring you joy, laughter, and all the things that make you smile. Enjoy your day to the fullest!";
+      document.getElementById("message").textContent = message;
+    }
+  </script>
+</body>
+</html>
