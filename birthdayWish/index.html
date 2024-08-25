@@ -36,7 +36,7 @@
 </head>
 <body>
   <div class="container">
-    <h1>Happy Birthday!</h1>
+    <h1>Happy Birthday! <span></span></h1>
     <p id="message"></p>
     <button onclick="showBirthdayMessage()">Click to see your birthday message</button>
   </div>
@@ -88,9 +88,23 @@ window.addEventListener('load', () => {
   </script>
 
   <script>
+    window.addEventListener("load", function(){
+        var name = prompt("Enter your name:");
+      if (name === null || name === "") {
+        alert("Please enter your name!");
+        return;
+      }
+      else{
+        document.querySelector("h1 span").textContent = name;
+        
+       
+        
+      }
+
+    })
     function showBirthdayMessage() {
-      var message = "Wishing you a very happy birthday! May this special day bring you joy, laughter, and all the things that make you smile. Enjoy your day to the fullest!";
-      document.getElementById("message").textContent = message;
+        var message = "Wishing you a very happy birthday! May this special day bring you joy, laughter, and all the things that make you smile. Enjoy your day to the fullest! ";
+        document.getElementById("message").textContent = message;
     }
   </script>
 </body>
