@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img {
+    width: 17vw;
+    height: 40vh;
+    border-radius: 10px;
+    /* position: relative; */
+}
+#books{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+#books >div{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    margin:7px;
+    width: 20vw;
+    height: 75vh;
+    cursor: pointer;
+}
+#books >div:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s ease;
+}
+#books >div >h6{
+    font-family: 'Courier New', Courier, monospace;
+    align-items: center;
+    text-align: center;
+    color: aliceblue;
+}
+#books >div >span{
+    font-family: 'Courier New', Courier, monospace;
+    align-items: center;
+    text-align: center;
+    color: aliceblue;
+}
