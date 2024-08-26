@@ -92,7 +92,11 @@ window.addEventListener('load', () => {
         var name = prompt("Enter your name:");
       if (name === null || name === "") {
         alert("Please enter your name!");
+        // document.querySelector("body").style.display = "nonle";
+
         return;
+        
+
       }
       else{
         document.querySelector("h1 span").textContent = name;
