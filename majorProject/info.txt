@@ -1,0 +1,3 @@
+home screen
+seach screen
+detail screen

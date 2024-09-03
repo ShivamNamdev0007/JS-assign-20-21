@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Baskervville SC", serif;
+    font-weight: 350;
+    font-style: normal;
+}
+
+
+header {
+    background-color: black;
+    position: sticky;
+    top: 0.2px;
+    z-index: 101;
+
+}
+
+header nav ul {
+
+    padding-top: 2px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 0px 5px;
+    color: white;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    padding: 0px 5px;
+    box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+    color: #00C4F1;
+    border-bottom: 2px solid rgb(216, 210, 210);
+    transition: all 0.7s ease;
+    
+}
+
+#logo {
+    max-width: 100px;
+    cursor: pointer;
+    filter: drop-shadow(20px 7px 5px #302e2e);
+}
+
+
+button {
+    cursor: pointer;
+    color: black;
+    padding: 2px 4px;
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+    border-radius: 15px;
+}
+
+button:hover {
+    box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+    color: black;
+}
+
+/* button {
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+    background-color: white;
+    background-image: url("");
+    color: black;
+    padding: 2px 18px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+button:hover {
+    background-color: #00C4F1;
+    color: white;
+
+    border: none;
+    transition: all 0.5s ease;
+} */
+
+@media (max-width: 768px) {
+    header nav ul li {
+        display: none;
+    }
+
+}
+
+/* ****************************** */
+
+
+.imgContainer {
+    background-image: linear-gradient(to bottom,
+            rgba(255, 255, 255, 0.3),
+            rgba(255, 255, 255, 0.3)), url("https://img.freepik.com/premium-photo/gold-black-coin-with-word-crypto-it_713888-4978.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+h1{
+    filter: drop-shadow(2px 2px 2px #7b0a0a);
+}
