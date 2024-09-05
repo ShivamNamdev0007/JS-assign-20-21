@@ -180,10 +180,7 @@ ul {
             #d96570 60%,
             #dde3ea 80%,
             #dde3ea 100%);
-
-
-
-        -webkit-background-clip: text;
+            -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
 }
 .brandQuestion
