@@ -228,9 +228,11 @@ ul {
     padding: 20px;
     outline: none;
     border: none;
-    background: transparent;
+    background: black;
     font-size: 16px;
+    border-radius: 50px;
     color: white;
+    
 
 }
 .inputArea .iconGroup{
