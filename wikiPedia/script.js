@@ -39,7 +39,7 @@ function displayResults(results) {
             <div>
                 <h3>${title}</h3>
                 <p>${snippet}</p>
-                <a href="${url}" target="_blank">${url}Show More...</a>
+                <a href="${url}" target="_blank">Read More...</a>
                 
             </div>
         `;
