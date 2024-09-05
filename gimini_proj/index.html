@@ -86,6 +86,7 @@
     <script type="module">
         let input=document.getElementById("user-input");
         let datafromui= document.getElementById("datafromui");
+        let startContent=document.querySelector(".startContent");
 
         import { GoogleGenerativeAI } from "@google/generative-ai";
         // import { secret } from "./hidedata.js";
@@ -94,6 +95,8 @@
         const genAI = new GoogleGenerativeAI(API_KEY);
         let button1 = document.querySelector("#call");
         async function callapi() {
+            startContent.style.display="none";
+
             const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
             const prompt = input.value;
@@ -103,7 +106,7 @@
             const text = response.text();
             datafromui.innerText=text;
             
-            // console.log(response);
+            console.log(response);
             input.value = '';
         
         };
