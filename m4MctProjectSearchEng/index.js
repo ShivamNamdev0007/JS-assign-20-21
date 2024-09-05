@@ -5,7 +5,7 @@ let Container = document.querySelector("#datafromapi")
 let navbar = document.getElementById('navbar');
 let image= document.getElementById('image');
 let language = document.getElementById('language');
-let footer = document.getElementById('footer');
+// let footer = document.getElementById('footer');
 let imagepage2=document.getElementById('imgpage2');
 
 
@@ -16,7 +16,7 @@ form.addEventListener('submit', function (e) {
     navbar.innerHTML ='';
     image.style.display="none";
     language.style.display="none";
-    footer.style.display="none" ;
+    // footer.style.display="none" ;
     imagepage2.style.display= 'block';
 
     e.preventDefault();
@@ -32,7 +32,7 @@ form.addEventListener('submit', function (e) {
 
                 let newDiv = document.createElement('div');
                 newDiv.classList.add('dynamic-results');
-                newDiv.innerHTML = `<h3>${element.title}</h3>
+                newDiv.innerHTML = `<h2>${element.title}</h2>
                 <a href="${element.url}">Visit Site: ${element.url}</a>
                 <p>${element.snippet}</p>
                 `;
