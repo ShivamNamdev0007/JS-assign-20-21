@@ -1,7 +1,7 @@
 let searchButton =document.getElementById('searchButton');
 searchButton.addEventListener('click', function() {
     let container = document.querySelector(".container");
-    let img=document.querySelector("img");
+    let img=document.getElementById("img11");
     img.style.display="none";
     container.style.flexDirection="row";
     const searchQuery = document.getElementById('searchInput').value;
@@ -45,4 +45,31 @@ function displayResults(results) {
         `;
         resultsDiv.appendChild(dynamicResults);
     });
+}
+
+
+
+// *********************
+const startButton = document.getElementById('mic');
+const textOutput = document.getElementById('searchInput');
+
+if ('SpeechRecognition' in window || 'webkitSpeechRecognition' in window) {
+  const recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition)();
+
+  recognition.onresult = (event) => {
+    textOutput.value += event.results[0][0].transcript + ' ';
+  };
+
+  startButton.addEventListener('click', () => {
+    
+    recognition.start();
+    startButton.disabled = true;
+    textOutput.value='';
+  });
+
+  recognition.onend = () => {
+    startButton.disabled = false;
+  };
+} else {
+  textOutput.value = "Speech recognition not supported.";
 }

@@ -65,3 +65,9 @@ input{
     width: auto;
     height: 22px;
 }
+#mic{
+    margin-right:15px ;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    color: #fff;
+}

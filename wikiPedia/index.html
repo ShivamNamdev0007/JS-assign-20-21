@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <link rel="icon" href="./icone.jpg">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wikipedia Search App</title>
 </head>
 <body>
+    <i class="fa-solid fa-microphone" id="micro" ></i>
     <div>
         <a href="https://shivamnamdev0007.github.io/JS-assign-20-21/m4MctProjectSearchEng/"><img src="./imgpage2.png" alt="" class="icone"></a>
         <a href="https://shivamnamdev0007.github.io/JS-assign-20-21/gimini_proj/"><img src="./gemini_sparkle_v002_d4735304ff6292a690345.svg" alt="" class="icone"></a>
@@ -15,9 +17,14 @@
     <div class="container">
 
         <h1>Wikipedia</h1>
-        <img src="./Wikipedia-logo-v2@1.5x.png" alt="" width="250px" height="250px">
+        <img src="./Wikipedia-logo-v2@1.5x.png" alt="" width="250px" height="250px" id="img11">
         <input type="text" id="searchInput" placeholder="Search Wikipedia...">
-        <button id="searchButton">Search</button>
+        <div>
+            <i class="fa-solid fa-microphone" id="mic"></i>
+            <button id="searchButton">Search</button> 
+        </div>
+        
+        
 
         
 
@@ -26,7 +33,7 @@
     <p class="para">Results Count : <span id="count">0</span></p>
    
     <div id="results"></div>
-   
+    
     <script src="script.js"></script>
 </body>
 </html>
