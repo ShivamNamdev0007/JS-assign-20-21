@@ -60,3 +60,8 @@ input{
     color: black;
     font-size:x-large;
 }
+.icone{
+    margin: 15px;
+    width: auto;
+    height: 32px;
+}
