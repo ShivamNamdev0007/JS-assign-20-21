@@ -35,6 +35,8 @@ img {
 #books >div:hover{
     background-color: rgba(0, 0, 0, 0.5);
     transition: background-color 0.3s ease;
+    transform: scale(1.08);
+    /* transform: rotatey(25deg) ;     */
 }
 #books >div >h6{
     font-family: 'Courier New', Courier, monospace;
